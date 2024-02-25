@@ -50,8 +50,8 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>org.exaxis.concordance.App</mainClass>
-                <packageName>org.exaxis.concordance</packageName>
+                <mainClass>org.jp.App</mainClass>
+                <packageName>org.jp</packageName>
                 <addClasspath>true</addClasspath>
               </manifest>
             </archive>
