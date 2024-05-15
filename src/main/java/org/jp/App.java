@@ -29,8 +29,10 @@ public class App {
                 if (input.equals("Yes")) {
                     System.out.println("Here are all the rooms in our hotel, which would you like?");
                     for (int i = 0; i < rooms.size(); i++) {
-                        System.out.println("Room " + rooms.get(i).roomNumber + ", Fits " + rooms.get(i).capacity + ", Price Per Day " + rooms.get(i).pricePerDay);
-
+                        boolean available = LGAHotel.isRoomAvailable(rooms.get(i).roomNumber);
+                        if (available == true) {
+                            System.out.println("Room " + rooms.get(i).roomNumber + ", Fits " + rooms.get(i).capacity + ", Price Per Day " + rooms.get(i).pricePerDay);
+                        }
                     }
                     while (true) {
                         input = reader.nextLine();
